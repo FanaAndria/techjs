@@ -1,0 +1,49 @@
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgba(8, 218, 183, 0.418);
+    color: #d1d1d1;
+    font-size: 15px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+   
+   html, body {
+    height: 100%;
+    margin: 0;
+  }
+   body{
+    
+    background-image: url('gase.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    canvas {
+        border: 1px solid white;
+      }

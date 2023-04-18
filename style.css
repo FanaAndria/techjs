@@ -1,0 +1,131 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+body{
+    
+    background-image: url('gg.png');
+}
+input{
+    font-size: 15px;
+    border-radius: 20px;
+    flex: auto;
+  
+    
+}
+
+fieldset{
+    border-radius: 25px;
+    background-color: rgba(43, 130, 138, 0.486);
+    margin-top:10% ;
+    margin-right: 35%;
+    margin-left: 40%;
+    
+    
+}
+/*.scale-up-center{
+    -webkit-animation: scale-up-center 3s;
+            animation: scale-up-center 3s;
+}*/
+.btn {
+    
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(17, 98, 122);
+    --btn-bg-2: rgb(18, 189, 180);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 255, 209, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(3, 80, 67, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn:hover {
+    background-position: right top;
+  }
+  
+  .btn:is(:focus, :focus-within,:active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: linear;
+    }
+    
+  }
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+    
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #111010;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 25px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: initial;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 25px;
+    color: #080808;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
